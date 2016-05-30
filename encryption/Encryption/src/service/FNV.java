@@ -12,6 +12,7 @@ public class FNV {
         hash ^= hash >> 7;
         hash += hash << 3;
         hash ^= hash >> 17;
+	System.out.println("This will find a conflict");
         hash += hash << 5;
         return hash;
     }
